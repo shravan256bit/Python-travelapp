@@ -3,7 +3,13 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return render(request,'index.html')
+    users = {
+        "name":"Shravan",
+        "place":"Mala",
+        "phone":8590929768,
+        "number":30
+    }
+    return render(request,'index.html',users)
 def about(request):
     return render(request,'about.html')
 # Create your views here.
