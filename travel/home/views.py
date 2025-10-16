@@ -1,11 +1,14 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-
+from .models import categories
 
 def index(request):
     return render(request,'index.html')
 def about(request):
-    return render(request,'about.html')
+    dict = {
+        'category':categories.objects.all()
+    }
+    return render(request,'about.html',dict)
 # Create your views here.
 def places(request):
     return render(request,'places.html')

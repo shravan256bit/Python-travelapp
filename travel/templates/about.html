@@ -6,5 +6,9 @@
       <h1>About Us</h1>
         <p>We are a tourism service dedicated to Champions League football clubs. Our site provides information on top clubs and helps with bookings.</p>
         <p>Founded in 2025, we aim to make football tourism easy and exciting.</p>
+        {% for c in category %}
+        <h3>{{ c.cat_name }}</h3>
+        <h4>{{ c.cat_spec }}</h4>
+        {% endfor %}
 </main>
 {% endblock body%}

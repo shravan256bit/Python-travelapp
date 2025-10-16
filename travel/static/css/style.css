@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0053A0; /* Champions League blue theme */
+    color: white;
+    font-size: 16px;
+}
+
+header {
+    background-color: #002147; /* Darker blue */
+    color: white;
+    padding: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Improved design: Add shadow */
+}
+
+#company-name {
+    float: left;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #FFD700; /* Yellow accent for Champions League */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav li a:hover {
+    background-color: #FFD700;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.club-section {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); 
+    transition: transform 0.3s; 
+    max-width: 800px; 
+}
+
+.club-section:hover {
+    transform: scale(1.02); 
+}
+
+.real-madrid { background-color: white; color: purple; border: 2px solid purple; }
+.bayern-munich { background-color: red; color: white; border: 2px solid red; }
+.psg { background-color: blue; color: red; border: 2px solid blue; }
+.chelsea { background-color: blue; color: white; border: 2px solid blue; }
+.manchester-united { background-color: red; color: white; border: 2px solid red; }
+.liverpool { background-color: red; color: white; border: 2px solid red; }
+.arsenal { background-color: red; color: white; border: 2px solid red; }
+.barcelona { background-color: blue; color: red; border: 2px solid blue; }
+.juventus { background-color: black; color: white; border: 2px solid black; }
+.ac-milan { background-color: red; color: black; border: 2px solid red; }
+
+.club-slider img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.club-slider img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.booking-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFD700; 
+    color: #0053A0;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+    transition: all 0.3s;
+}
+
+.booking-button:hover {
+    background-color: #002147;
+    transform: translateY(-2px);
+}
+
+.interactive-section {
+    background-color: #002147;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+footer {
+    background-color: #002147;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2); 
+}
