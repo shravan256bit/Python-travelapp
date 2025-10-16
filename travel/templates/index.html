@@ -1,13 +1,73 @@
 {% extends 'base.html' %}
-{% block title %}
-home
-{% endblock title%}
-
+    
 {% block body %}
-<h1>This is homepage</h1>
-<h1>hello {{ name }} and your place is {{ place }}.Your contact number is {{ phone }}</h1>
-{% if number > 20 %}
-<h2>it great</h2>
-<a href="{% url 'about'%}">TO about</a>
-{% endif %}
-{% endblock body%}
+<main>
+        <h1>Top  Clubs</h1>
+        <p>Explore details of the top 10 European football clubs with their logos.</p>
+        <section class="club-section manchester-united">
+            <h2>Manchester United</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Manchester_United_FC_crest.svg/300px-Manchester_United_FC_crest.svg.png" alt="Manchester United Crest" alt="Manchester United Logo" width="100">
+            <p>Manchester United has 3 titles. Founded in 1878, based in Manchester, England.</p>
+        </section>
+        <section class="club-section real-madrid">
+            <h2>Real Madrid</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/300px-Real_Madrid_CF.svg.png " width="100">
+            <p>Real Madrid has 14 Champions League titles. Founded in 1902, they are based in Madrid, Spain.</p>
+        </section>
+
+        
+
+        <section class="club-section psg">
+            <h2>PSG</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Paris_Saint-Germain_F.C..svg/315px-Paris_Saint-Germain_F.C..svg.png" width="100">
+            <p>PSG has 0 titles but is a modern powerhouse. Founded in 1970, based in Paris, France.</p>
+        </section>
+
+        <section class="club-section bayern-munich">
+            <h2>Bayern Munich</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg/330px-FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg.png" width="100">
+            <p>Bayern Munich has 6 titles. Established in 1900, they are from Munich, Germany.</p>
+        </section>
+
+        <section class="club-section chelsea">
+            <h2>Chelsea</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Chelsea_FC.svg/323px-Chelsea_FC.svg.png" width="100">
+            <p>Chelsea has 2 titles. Founded in 1905, they are from London, England.</p>
+        </section>
+
+        
+
+        <section class="club-section liverpool">
+            <h2>Liverpool</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/300px-Liverpool_FC.svg.png" width="100">
+            <p>Liverpool has 6 titles. Established in 1892, from Liverpool, England.</p>
+        </section>
+
+        <section class="club-section juventus">
+            <h2>Juventus</h2>
+            <img src="https://static.dezeen.com/uploads/2017/01/juventus-logo-design-graphics-football_products_dezeen_2364_col_7.jpg" width="100">
+            <p>Juventus has 2 titles. Established in 1897, based in Turin, Italy.</p>
+        </section>
+
+        <section class="club-section arsenal">
+            <h2>Arsenal</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Arsenal_FC.svg/270px-Arsenal_FC.svg.png" width="100">
+            <p>Arsenal has 1 title. Founded in 1886, based in London, England.</p>
+        </section>
+
+        <section class="club-section barcelona">
+            <h2>Barcelona</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/345px-FC_Barcelona_%28crest%29.svg.png" width="100">
+            <p>Barcelona has 5 titles. Founded in 1899, from Barcelona, Spain.</p>
+        </section>
+
+        
+
+        <section class="club-section ac-milan">
+            <h2>AC Milan</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Logo_of_AC_Milan.svg/330px-Logo_of_AC_Milan.svg.png" width="100">
+            <p>AC Milan has 7 titles. Founded in 1899, from Milan, Italy.</p>
+        </section>
+        
+    </main>
+{% endblock body %}

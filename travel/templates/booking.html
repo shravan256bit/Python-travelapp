@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+    
+{% block body %}
+ <main>
+        <h1>Booking Information</h1>
+        <p>Book your tickets for Champions League matches and tours. Select a club and date for availability.</p>
+        <form>
+            <label for="club">Club:</label>
+            <select id="club" name="club">
+                <option value="real-madrid">Real Madrid</option>
+                <option value="bayern-munich">Bayern Munich</option>
+                <!-- Add more options as needed -->
+            </select><br>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date"><br>
+            <button type="submit">Book Now</button>
+        </form>
+</main>
+{% endblock body %}
